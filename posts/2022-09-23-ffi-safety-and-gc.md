@@ -9,7 +9,7 @@ with code written in other languages, including C.  Some kinds of
 foreign calls—such as those that could call back into Haskell
 code—require the GHC *runtime system (RTS)* to do some bookkeeping.
 This bookkeeping has a performance cost, so there is a mechanism to
-out of it for foreign calls that can't call back into Haskell.  This
+opt out of it for foreign calls that can't call back into Haskell.  This
 mechanism is called the *safety level*.  There are two levels:
 
 - **`safe`**: do the bookkeeping; callbacks are safe
